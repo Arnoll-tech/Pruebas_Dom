@@ -122,3 +122,9 @@ function agregarFila() {
     let celltree = newRow.insertCell(2);
         celltree.innerText = "5.00";
 }
+
+function eliminarFila() {
+    let table = document.getElementById("tableProduct");
+    let numRow = table.rows.length - 1;//10 rows
+    table.deleteRow(numRow);
+}
