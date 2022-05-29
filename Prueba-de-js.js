@@ -109,5 +109,16 @@ imprimirArray(array1)
 
 */
 
-let table = document.getElementById("tableProduct");
-let atributos = table.attributes;
+
+
+function agregarFila() {
+    let table = document.getElementById("tableProduct");
+    let tableRef = table.getElementsByTagName("tbody")[0];
+    let newRow = tableRef.insertRow(tableRef.rows.length);
+    let cellOne = newRow.insertCell(0);
+        cellOne.innerText = "123233432";
+    let celltwo = newRow.insertCell(1);
+        celltwo.innerText = "Pan";
+    let celltree = newRow.insertCell(2);
+        celltree.innerText = "5.00";
+}
