@@ -110,4 +110,4 @@ imprimirArray(array1)
 */
 
 let table = document.getElementById("tableProduct");
-console.log(table);
+let atributos = table.attributes;
